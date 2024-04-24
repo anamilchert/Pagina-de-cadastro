@@ -4,33 +4,29 @@
     <meta name="layout" content="main"/>
     <title>Cadastro</title>
 </head>
-<body>
-    <div class="container">
+<body class="container">
+    <div class="container-form">
         <h2>Formulário de Cadastro</h2>
         <form action="#" method="post">
-            <div class="form-line">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <div class="form-box">
+                <input class="input" type="text" id="nome" name="nome" placeholder="Nome" required>
             </div>
-            <div class="form-line">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="form-box">
+                <input class="input" type="email" id="email" name="email" placeholder="E-mail" required>
             </div>
-            <div class="form-line">
-                <label for="CPF">CPF:</label>
-                <input type="text" id="CPF" name="CPF" required>
+            <div class="form-box">
+                <input class="input" type="text" id="CPF" name="CPF" placeholder="CPF" required>
             </div>
-            <div class="form-line">
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" required>
+            <div class="form-box">
+            <div class="form-box-endereco">
+                <input class="input" type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+                <input class="input" type="text" id="CEP" name="CEP" placeholder="CEP" required>
+             </div>   
             </div>
-            <div class="form-line">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+            <div class="form-box">
+                <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
             </div>
-            <div class="form-line">
-                <button type="submit">Cadastrar</button>
-            </div>
+                <button type="submit" class="button-form">Cadastrar</button>
         </form>
     </div>
 </body>
