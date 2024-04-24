@@ -1,3 +1,38 @@
+@media screen and (min-width: 1000px) {
+    
+    .container-form {
+        width: 600px;
+        margin: 0 auto; 
+    }
+
+    .form-box {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .button-form {
+        width: 150px; 
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    
+    .container-form {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .form-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
 
 .container{
     color: #424649;
@@ -5,15 +40,15 @@
 
 .container-form {
     padding: 20px;
-    margin: 10% 30%;
+    margin: 8% 32%;
     background-color: #D9D9D9;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 h2 {
     font-family: fantasy;
     font-size: 26px;
-    margin: 0 30%
+    margin: 0 24%
 }
 
 html {
@@ -26,30 +61,25 @@ html {
     background-color: #F5F5F5;
     color: #333333;
     padding: 2%;
-    margin: 12px;
+    margin: 12px 16px;
     border-radius: 50px;
-}
-html.no-cssgradients {
-    background-color: #aaa;
+    width: 230px;
 }
 
+.CEP-input{
+    background-color: #F5F5F5;
+    color: #333333;
+    padding: 2%;
+    margin: 12px 16px;
+    border-radius: 50px;
+    width: 138px;
+}
 
 .form-box {
     background-color: #F5F5F5;
     color: #333333;
-    margin: 12px;
-    border-radius: 50px;
-}
-
-
-a:hover, a:active {
-    outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
-}
-
-.content h1 {
-    border-bottom: 1px solid #CCCCCC;
-    margin: 0.8em 1em 0.3em;
-    padding: 0 0.25em;
+    margin: 12px 0;
+    border-radius: 40px;
 }
 
 label {
@@ -69,9 +99,6 @@ select {
     padding: 0.2em 0.2em 0.2em 0;
 }
 
-select[multiple] {
-    vertical-align: top;
-}
 
 textarea {
     width: 250px;
@@ -88,36 +115,9 @@ textarea {
     padding: 0.25em;
 }
 
-.errors {
-    background: #fff3f3;
-    border: 1px solid #ffaaaa;
-    color: #cc0000;
-    -moz-box-shadow: 0 0 0.25em #ff8888;
-    -webkit-box-shadow: 0 0 0.25em #ff8888;
-    box-shadow: 0 0 0.25em #ff8888;
-}
-
-.message {
-    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
-    text-indent: 2.2em;
-}
-
 .button-form{
     border-radius: 50px;
     padding: 6px;
     width: 200px;
     margin: 2% 34%
-}
-
-a.skip {
-    position: absolute;
-    left: -9999px;
-}
-
-.grails-logo-container {
-    background: #7c7c7c no-repeat 50% 30%;
-    margin-bottom: 20px;
-    color: white;
-    height:300px;
-    text-align:center;
 }
