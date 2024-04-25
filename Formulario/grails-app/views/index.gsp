@@ -6,7 +6,7 @@
 </head>
 <body class="container">
     <div class="container-form">
-        <h2>Formulário de Cadastro</h2>
+        <h2>Cadastro</h2>
         <form action="#" method="post">
             <div class="form-box">
                 <input class="input" type="text" id="nome" name="nome" placeholder="Nome" required>

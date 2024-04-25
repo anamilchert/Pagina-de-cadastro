@@ -41,18 +41,18 @@
 .container-form {
     padding: 20px;
     margin: 8% 32%;
-    background-color: #D9D9D9;
+    background-color: #ebe8e8;
     border-radius: 40px;
 }
 
 h2 {
     font-family: fantasy;
     font-size: 26px;
-    margin: 0 24%
+    margin: 0 38%
 }
 
 html {
-    background-color: #6ba6fe;
+    background-color: #cfdbee;
     height: 100%;
 }
 
