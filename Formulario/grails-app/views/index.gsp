@@ -7,7 +7,7 @@
 <body class="container">
     <div class="container-form">
         <h2>Cadastro</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" id="cadastroForm">
             <div class="form-box">
                 <input class="input" type="text" id="nome" name="nome" placeholder="Nome" required>
             </div>
@@ -29,8 +29,11 @@
                 <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
                 <input class="input" type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
             </div>
-            <button type="submit" class="button-form" onclick="imprimirInformacoes()">Cadastrar</button>
+            <button type="submit" class="button-form" onclick="imprimirInformacoes(event)">Cadastrar</button>
         </form>
+        <div id="mensagemSucesso" class="mensagem-sucesso" style="display: none;">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
     </div>
 
     <script>
@@ -71,7 +74,8 @@
             }
         };
 
-        function imprimirInformacoes() {
+        function imprimirInformacoes(event) {
+            event.preventDefault();
             var nome = document.getElementById('nome').value;
             var email = document.getElementById('email').value;
             var cpf = document.getElementById('CPF').value;
@@ -96,9 +100,9 @@
             console.log("Senha:", senha);
             console.log("Confirmar Senha:", confirmarSenha);
 
-             window.location.href = "cadastro-sucesso.gsp";
+            document.getElementById('mensagemSucesso').style.display = 'block';
 
-            return false;
+            document.getElementById('cadastroForm').style.display = 'none';
         }
     </script>
 </body>
