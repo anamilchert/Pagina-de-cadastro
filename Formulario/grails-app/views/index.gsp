@@ -29,7 +29,7 @@
                 <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
                 <input class="input" type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
             </div>
-            <button type="submit" class="button-form">Cadastrar</button>
+            <button type="submit" class="button-form" onclick="imprimirInformacoes()">Cadastrar</button>
         </form>
     </div>
 
@@ -70,6 +70,36 @@
                 limparFormularioCEP();
             }
         };
+
+        function imprimirInformacoes() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var cpf = document.getElementById('CPF').value;
+            var cep = document.getElementById('CEP').value;
+            var endereco = document.getElementById('endereco').value;
+            var num = document.getElementById('num').value;
+            var complemento = document.getElementById('complemento').value;
+            var bairro = document.getElementById('bairro').value;
+            var cidade = document.getElementById('cidade').value;
+            var senha = document.getElementById('senha').value;
+            var confirmarSenha = document.getElementById('confirmarSenha').value;
+
+            console.log("Nome:", nome);
+            console.log("E-mail:", email);
+            console.log("CPF:", cpf);
+            console.log("CEP:", cep);
+            console.log("Endereço:", endereco);
+            console.log("Número:", num);
+            console.log("Complemento:", complemento);
+            console.log("Bairro:", bairro);
+            console.log("Cidade:", cidade);
+            console.log("Senha:", senha);
+            console.log("Confirmar Senha:", confirmarSenha);
+
+             window.location.href = "cadastro-sucesso.gsp";
+
+            return false;
+        }
     </script>
 </body>
 </html>
